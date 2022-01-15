@@ -10,21 +10,11 @@
 
 /* /* html {
     font-size: 62.5%; /* 10 px = 1rem */
-} 
+ 
 
-/* body{
-    font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #edf0f1;
-    background-color: rgb(42, 42, 44);
-    
-}
 
 /*INDEX*/
-.nav-link:hover {
-    color: #B70E21;
-}
+
 /* .inicio{
     transition: all 0.3s ease 0s;
 }
@@ -141,7 +131,7 @@ button:hover{
 
 /*NOSOTROS*/
 
-.container { 
+.container--grid { 
     margin-top: 8rem;
     display: grid;
     align-items: center;
@@ -187,11 +177,11 @@ button:hover{
   .img6 { grid-area: img6; }
   
 
-.container img{
+.container--grid img{
     width: 100%;
     height: auto;
     border-radius: 5px;
-}
+} 
 
 /*FIN NOSOTROS*/
 
