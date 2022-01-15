@@ -8,11 +8,11 @@
     text-decoration: none;
 }
 
-html {
+/* /* html {
     font-size: 62.5%; /* 10 px = 1rem */
-}
+} 
 
-body{
+/* body{
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -22,8 +22,10 @@ body{
 }
 
 /*INDEX*/
-
-.inicio{
+.nav-link:hover {
+    color: #B70E21;
+}
+/* .inicio{
     transition: all 0.3s ease 0s;
 }
 
@@ -134,7 +136,7 @@ button:hover{
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
-} 
+}  */
 /*FIN INDEX*/
 
 /*NOSOTROS*/
