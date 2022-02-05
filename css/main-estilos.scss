@@ -7,17 +7,34 @@
 	text-decoration: none;
 }
 
-.card {
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+}
+
+$colores-background: (
+	"contacto-info":#000,
+	"formulario": #222222,
+);
+
+%border-cards{
+	border: crimson inset;
 	transition: all 0.3s ease 0s;
 	&:hover {
 		transform: scale(1.08);
 	}
 }
 
+h1{
+	font-size: 20px;
+}
+.card {
+	@extend %border-cards;
+}
+
 .footer {
 	flex-wrap: wrap;
-	display: flex;
-	align-items: center;
+	@include flexcenter;
 	justify-content: space-evenly;
 }
 .container--grid {
@@ -47,18 +64,16 @@
 }
 .section {
 	grid-area: section;
-	display: flex;
+	@include flexcenter;
 	justify-content: center;
-	align-items: center;
 }
 .img3 {
 	grid-area: img3;
 }
 .section1 {
 	grid-area: section1;
-	display: flex;
+	@include flexcenter;
 	justify-content: center;
-	align-items: center;
 }
 .img4 {
 	grid-area: img4;
@@ -105,7 +120,7 @@
 }
 .card--servicios {
 	padding: 1rem;
-	border: crimson inset;
+	@extend %border-cards;
 	img {
 		width: 100%;
 		height: auto;
@@ -147,7 +162,7 @@
 	box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 .formulario {
-	background: #222222;
+	background: map-get($map: $colores-background, $key: formulario );
 	form {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -189,7 +204,7 @@
 	}
 }
 .contacto-info {
-	background: #000;
+	background: map-get($map: $colores-background, $key: contacto-info);
 	h4 {
 		text-align: center;
 		margin: 0 0 1rem 0;
