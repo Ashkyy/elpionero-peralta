@@ -102,10 +102,11 @@ h1{
 	gap: 2rem;
 	padding: 5rem;
 	grid-auto-flow: column;
-	grid-template-areas: 
+	grid-template-areas:
     "card1 card2" 
     "card4 card5";
 }
+
 .card1 {
 	grid-area: card1;
 }
